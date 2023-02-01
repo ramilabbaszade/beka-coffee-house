@@ -1,16 +1,17 @@
+<script setup>
+  import {inject} from "vue";
+  const store = inject("store")
+
+</script>
+
 <template>
   <header>
     <div class="left-corner">
-      <div class="navbar-brand">Beka's Coffee House ☕</div>
-      <div class="left-corner__list">
-        <div>MENU</div>
-        <div>DELIVERY</div>
-        <div>CAREER</div>
-      </div>
+      <div class="navbar-brand"><router-link to="/"> Beka's Coffee House ☕ </router-link></div>
     </div>
     <div class="right-corner">
-      <div>🏠</div>
-      <div>🧺 2</div>
+      <div>About</div>
+      <div> <router-link to="/basket">🧺 {{store.count}} </router-link></div>
     </div>
   </header>
 </template>
@@ -28,10 +29,7 @@
   }
   .right-corner{
     display: flex;
-    gap: 1rem;
-  }
-  .left-corner__list{
-    display: flex;
+    align-items: center;
     gap: 1rem;
   }
   .navbar-brand{

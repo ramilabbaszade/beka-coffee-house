@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Special Cake",
+    "price": 10,
+    "type": "cake"
+  },
+  {
+    "name": "Tea Cake",
+    "price": 4,
+    "type": "coffee"
+  },
+  {
+    "name": "Tea",
+    "price": 5,
+    "type": "tea"
+  }
+]

@@ -1,13 +1,13 @@
 <script setup>
 import Header from "./components/Header.vue";
 import HeadImage from "./components/HeadImage.vue";
-import MainPage from "./components/MainPage.vue";
+import MainPage from "./pages/MainPage.vue";
 </script>
 
 <template>
   <Header/>
   <HeadImage/>
-  <MainPage/>
+  <router-view/>
 </template>
 
 <style>
