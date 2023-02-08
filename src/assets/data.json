@@ -5,12 +5,12 @@
     "type": "cake"
   },
   {
-    "name": "Tea Cake",
+    "name": "Cake",
     "price": 4,
-    "type": "coffee"
+    "type": "cake"
   },
   {
-    "name": "Tea",
+    "name": "Hot Chocolate",
     "price": 5,
     "type": "tea"
   }
