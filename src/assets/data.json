@@ -3,18 +3,24 @@
     "id": 1,
     "name": "Special Cake",
     "price": 10,
-    "type": "cake"
+    "type": "Cake"
   },
   {
     "id": 2,
     "name": "Cake",
     "price": 4,
-    "type": "cake"
+    "type": "Cake"
   },
   {
     "id": 3,
     "name": "Hot Chocolate",
     "price": 5,
-    "type": "tea"
+    "type": "Tea"
+  },
+  {
+    "id": 4,
+    "name": "Latte",
+    "price": 2,
+    "type": "Coffee"
   }
 ]

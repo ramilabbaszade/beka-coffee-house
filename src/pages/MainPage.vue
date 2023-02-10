@@ -5,19 +5,27 @@ import {store} from "../store.js";
 export default {
     data(){
       return{
+        totalProducts:data,
         products:data,
-        store
+        store,
+        productTypes:["Tea","Coffee","Cake"],
+        selectedType:"Tea"
       }
     },
+    methods:{
+      filterProductByType(pType){
+        this.selectedType = pType
+        const filteredProducts = this.totalProducts.filter(p=> p.type === pType)
+        this.products = filteredProducts
+      }
+    }
   }
 </script>
 
 <template>
   <div class="main-page__container">
     <div class="main-page__container__head">
-      <div>Tea</div>
-      <div>Coffee</div>
-      <div>Cakes</div>
+      <div :class="{ active_filter:this.selectedType === pType }" class="filter" @click="this.filterProductByType(pType)" v-for="pType in productTypes">{{pType}}</div>
     </div>
     <div class="cards">
       <div v-for="card in products"  class="card">
@@ -32,6 +40,15 @@ export default {
 </template>
 
 <style>
+  .filter{
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .active_filter{
+    background:lightgray;
+  }
   .main-page__container{
   }
   .main-page__container__head{
